@@ -1,0 +1,190 @@
+/********* CUSTOM PROPERTIES **********/
+
+:root {
+    --main-font: 'Raleway';
+    --alternate-font: sans-serif;
+    --font-size: 16px;
+    --line-height: 1.6;
+    --main-color: #1e5f74;
+    --main-modal-color:#1e5f74b9;
+    --second-color: #1d2d50;
+    --second-modal-color: #1d2d50b9;
+    --alternative-color: #ed6663;
+    --alternative-modal-color: #ed6563e5;
+    --text-color: #000000;
+    
+    --max-width: 1200px;
+    --header-height: 5rem;
+    --logo-width: 4rem;
+    --logo-height: 3rem;
+    --logo-spacing: .2rem;
+    --nav-height: 64px;
+}
+
+/*****RESET STYLES******/
+
+html {
+    font-family: var(--main-font), var(--alternate-font);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-color);
+}
+
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    transition: all .3s ease-in-out;
+    color: var(--second-modal-color);
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+::selection { 
+    background-color: var(--alternative-color);
+    color: white;
+}
+
+
+/******Bootstrap Styles*******/
+
+.bg-dark {
+    background-color: var(--second-color) !important;
+}
+.navbar-brand img{
+   height: var(--logo-height);
+   width: auto;
+   padding: var(--logo-spacing);
+}
+
+.btn {
+    background-color: var(--alternative-color);
+}
+.btn:hover {
+    background-color: var(--alternative-modal-color);
+}
+
+.navbar-toggler {
+    border: 0;
+}
+.navbar-toggler:hover,
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: 0;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all .3s ease;
+}
+.navbar-dark .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2850,130,184, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-item:hover {
+    background-color: var(--main-modal-color);
+    transition: all .5s ease;
+}
+.nav-link {
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+.Website .carousel {
+    margin: auto;
+    max-width: 700px;
+    height: auto;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+
+
+/*******My Styles*******/
+
+.u-FullScreen {
+    width: 100%;
+    min-height: 100vh;
+}
+.u-flowText {
+    font-size: 1.25rem;
+   
+}
+
+.HeroImage {
+    padding-top: 8rem;
+    height: 100vh;
+    width: 100vw;
+    background-size: auto;
+    background-color: #1e5f74;    
+    background-image: linear-gradient(131deg, #1d2d50, #1e5f74);
+}
+.card {
+    border: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container a,
+.card a { 
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.ResponsiveSites i {
+    font-size: 2rem;
+    color: #0f4c75;
+}
+.text-color {
+    color: var(--alternative-color);
+}
+.text-alternative-color {
+    color: var(--main-color);
+}
+.background-color {
+    background-color: var(--alternative-color);
+}
+
+.WorkFlow-steps sup {
+    font-size: 0.8rem;
+    color: var(--main-color)
+}
+
+
+.Footer i {
+    font-size: 2em;
+}
+.Footer small {
+    font-size: 1em;
+    font-weight: bold;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****Media Queries****/
+
+@media (max-width: 1000px){
+.About .carousel-caption {
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+}
+
+
+
+@media (min-width: 992px){
+    .u-flowTest {
+        font-size: 1.75rem;
+    }
+}
+
